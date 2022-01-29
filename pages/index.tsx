@@ -1,15 +1,21 @@
 import React from "react";
 
 import { Container, Header, Main, Footer, Cards } from "@components";
+import { Hero } from "@components/hero";
 
 const Home: React.FC = () => {
   return (
-    <Container>
-      <Header />
-      <Main />
+    <>
+    
+      <Container>
+        <Header />
+        <Hero/>
+      
+      {/* <Main />
       <Cards />
-      <Footer />
+      <Footer /> */}
     </Container>
+    </>
   );
 };
 
