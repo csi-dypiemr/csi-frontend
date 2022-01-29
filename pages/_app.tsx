@@ -4,7 +4,7 @@ import "tailwindcss/tailwind.css";
 import { StyledThemeProvider } from "@definitions/styled-components";
 import { Provider } from "react-redux";
 import store from "@redux/store";
-
+import "../src/styles/styles.css";
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <StyledThemeProvider>
