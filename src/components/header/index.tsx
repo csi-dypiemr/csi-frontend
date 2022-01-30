@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false)
   return (
     <nav className="bg-transparent">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="w-full mx-auto px-4">
         <div className="flex justify-between">
           <div className="flex space-x-7">
             <div>
@@ -124,8 +124,10 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      <div className={isOpen ? 'mobile-menu' : 'hidden mobile-menu'}>
-        <ul className=" text-center">
+      <div className={isOpen ? 'mobile-menu ' : 'hidden mobile-menu '}>
+
+        <ul className="
+z-auto text-center bg-black h-screen rounded">
           <li className="active my-8">
             <a
               href="index.html"
