@@ -6,8 +6,8 @@ type TitleProps = {
     children: ReactNode,
 }
 
-export const Title: FunctionComponent<TitleProps> = ({ children }) => <h2
-     className = "text-white my-10 uppercase text-center stroke font-extrabold">
+export const Title: FunctionComponent<TitleProps> = ({ children,className }) => <h2
+     className ={`text-white my-10 uppercase text-center stroke font-extrabold ${className}`}>
     {children}
 </h2>
 

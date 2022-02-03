@@ -55,7 +55,7 @@ export const Header: React.FC = () => {
                 href=""
                 className="py-4 px-2 text-white font-semibold hover:text-white transition duration-300"
               >
-                Services
+                Events
               </a>
               <a
                 href=""
@@ -67,8 +67,15 @@ export const Header: React.FC = () => {
                 href=""
                 className="py-4 px-2 text-white font-semibold hover:text-white transition duration-300"
               >
-                Contact Us
+                Members
               </a>
+               <a
+                href=""
+                className="py-4 px-2 text-white font-semibold hover:text-white transition duration-300"
+              >
+                Blog
+              </a>
+              
               <Button>Login</Button>
             </div>
           </div>

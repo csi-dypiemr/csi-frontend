@@ -3,16 +3,18 @@ import Image from 'next/image'
 import {NewsLetter } from "./newsletter"
 export const Footer: React.FC = () => {
   return (
-    <div>
+    <div className='mt-10'>
       <NewsLetter/>
     
     <footer className="pt-28 text-center lg:text-left blue-background text-white mt-15 ">
       
       <div className="py-10 text-center md:text-left w-3/4 mx-auto">
-        <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+         */}
+          <div className='grid grid-flow-row-dense grid-cols-1 lg:grid-cols-5 grid-rows-1'>
           
-          <div className="text-center">
-            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-center">
+          <div className="text-center lg:text-left mt-2 mb-2">
+            <h6 className=" font-black mb-4 flex justify-center lg:justify-start md:justify-center">
               Useful links
             </h6>
             <p className="mb-4">
@@ -36,8 +38,8 @@ export const Footer: React.FC = () => {
               </a>
             </p>
           </div>
-          <div className="text-center">
-            <h6 className="uppercase font-extrabold mb-4 flex justify-center md:justify-center">
+          <div className="text-center lg:text-left mt-2 mb-2">
+            <h6 className=" font-black  mb-4 flex justify-center lg:justify-start md:justify-center">
              Quick Links
             </h6>
             <p className="mb-4">
@@ -61,11 +63,11 @@ export const Footer: React.FC = () => {
               </a>
             </p>
           </div>
-          <div className="">
+          <div className=" col-span-1 lg:col-span-2 mt-2 mb-2">
             <h6
               className="
-            uppercase
-            font-semibold
+            
+            font-black
             mb-4
             flex
             items-center
@@ -80,8 +82,8 @@ export const Footer: React.FC = () => {
               D. Y. Patil Educational Complex, Akurdi, Sector 29, Ravet Village Rd, Gurudwara Colony, Nigdi, Pimpri-Chinchwad, Maharashtra 411044 
             </p>
           </div>
-          <div className="">
-            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          <div className="mt-2 mb-2">
+            <h6 className="font-black mb-4 flex justify-center md:justify-start">
               Contact
             </h6>
             
@@ -216,7 +218,7 @@ export const Footer: React.FC = () => {
         </div>
       </div>
       <div className="text-center p-6 blue-background">
-        <span>© 2021 Copyright:</span>
+        <span className='font-semibold'>Copyright of Computer Society of India, DYPIMER 2021-22.  All rights reserved. © 2021 Copyright:</span>
         
       </div>
       </footer>
