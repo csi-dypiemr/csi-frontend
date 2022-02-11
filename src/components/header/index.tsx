@@ -1,9 +1,10 @@
 import React from 'react'
-
+import Link from 'next/link'
 import { Button, Logo } from '@components'
-
+import { useRouter } from "next/router";
 export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false)
+  const router = useRouter();
   return (
     <nav className="bg-transparent">
       <div className="w-full mx-auto px-4">
@@ -45,38 +46,42 @@ export const Header: React.FC = () => {
             </div>
 
             <div className="hidden md:flex items-center space-x-10">
+              <Link href="/">
+              
               <a
-                href=""
-                className="py-4 px-2 text-white border-b-4 border-white-500 font-semibold "
+                className={`py-4 px-2 text-white ${router.pathname == "/" ? "border-b-4 border-white-500" : ""} font-semibold `}
               >
                 Home
-              </a>
+                </a>
+              </Link>
+               <Link href="/events">
               <a
-                href=""
-                className="py-4 px-2 text-white font-semibold hover:text-white transition duration-300"
+                
+                className={`py-4 px-2 text-white font-semibold hover:text-white transition duration-300 ${router.pathname == "/events" ? "border-b-4 border-white-500" : ""}`}
               >
                 Events
-              </a>
+                </a>
+                </Link>
+             
+                <Link href="/team">
               <a
                 href=""
                 className="py-4 px-2 text-white font-semibold hover:text-white transition duration-300"
               >
-                About
-              </a>
-              <a
-                href=""
-                className="py-4 px-2 text-white font-semibold hover:text-white transition duration-300"
-              >
-                Members
-              </a>
-               <a
-                href=""
+                Team
+                </a>
+              </Link>
+              <Link href={"https://csidypiemr.medium.com/"}>
+                <a
+                  target="_blank"
                 className="py-4 px-2 text-white font-semibold hover:text-white transition duration-300"
               >
                 Blog
               </a>
-              
+              </Link>
+              <Link href="/login">
               <Button>Login</Button>
+              </Link>
             </div>
           </div>
 
