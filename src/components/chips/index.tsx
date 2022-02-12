@@ -66,14 +66,6 @@ export default function ChipSelect() {
     <Select
       closeMenuOnSelect={false}
       components={{ ClearIndicator, MultiValueLabel }}
-      styles={{
-        clearIndicator: ClearIndicatorStyles,
-        multiValueLabel: (base) => ({
-          ...base,
-          backgroundColor: '#2263E1',
-          color: 'white',
-        }),
-      }}
       defaultValue={colourOptions[0]}
       isMulti
           options={colourOptions}

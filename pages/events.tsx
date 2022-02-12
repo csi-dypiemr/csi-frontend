@@ -27,7 +27,7 @@ export default function login() {
           <Button>Register Now</Button>
         </div>
         <div className='flex justify-center '>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWMR9xcnViI2WHhhuQxT2cNbBrYGFCcNuowyZkLyK_uWF72A/viewform?embedded=true" width="640" height="1949" frameBorder={"0"} marginHeight={"0"} marginwidth="0">Loading…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWMR9xcnViI2WHhhuQxT2cNbBrYGFCcNuowyZkLyK_uWF72A/viewform?embedded=true" width="640" height="1949" frameBorder={"0"} marginHeight={0} marginWidth={ 0}>Loading…</iframe>
       </div>
         <div className="sm:pt-10">
           <Title>Past Events</Title>

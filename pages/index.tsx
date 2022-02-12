@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Script from 'next/script'
 import { Container, Header, Main, Footer, Cards } from '@components'
 import { Hero } from '@components/hero'
@@ -19,15 +19,7 @@ const Home: React.FC = () => {
         <About />
         <Contact />
         <Footer />
-        <Script>
-          <Script
-        id="stripe-js"
-        src="https://unpkg.com/react-motion-ui-pack/dist/react-motion-ui-pack.js"
-        onLoad={() => {
-          setStripe({ stripe: window.Stripe('pk_test_12345') })
-        }}
-      />
-        </Script>
+        
       </Container>
     </>
   )

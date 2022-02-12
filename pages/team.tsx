@@ -5,7 +5,7 @@ import { Header } from '@components/header';
 import { Title2 } from '@components/title/title2';
 import { Footer } from '@components/footer';
 
-const card = (index) => { 
+const card = (index: React.Key | null | undefined) => { 
     return (
         <div key={ index} className="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
                 <div>
@@ -91,7 +91,7 @@ export default function Team() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {[0,1,2,3,4,5,6,7,8].map((index) => { 
-                                return card({index});
+                                return card(index);
                             })}
             
         </div>

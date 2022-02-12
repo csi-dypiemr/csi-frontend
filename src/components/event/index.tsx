@@ -15,7 +15,7 @@ const card = (key: React.Key | null | undefined) => {
         Linux Fundamentals bootcamp
       </p>
       <p>
-        <p className="text-blue text-blue-600 text-center">Learn More ></p>
+        <p className="text-blue text-blue-600 text-center">Learn More</p>
       </p>
     </div>
   </div>)
