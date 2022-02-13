@@ -1,4 +1,5 @@
 import { Button } from '@components/button';
+import Link from 'next/link';
 import React from 'react';
 
 export default function HomeHero() {
@@ -26,8 +27,11 @@ export default function HomeHero() {
               also ensures that regular training and skill updating are
               organised for the IT professionals.
             </p>
-            <br/>
+            <br />
+            <Link href="/#contact" scroll={true}>
+            
             <Button className="m-3 mx-auto">Contact Us</Button>
+            </Link>
           </div>
         </div>
       </section>

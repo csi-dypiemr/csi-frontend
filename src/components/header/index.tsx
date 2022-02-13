@@ -66,7 +66,7 @@ export const Header: React.FC = () => {
                 <Link href="/team">
               <a
                 href=""
-                className="py-4 px-2 text-white font-semibold hover:text-white transition duration-300"
+                className={`py-4 px-2 text-white font-semibold hover:text-white transition duration-300 ${router.pathname == "/team" ? "border-b-4 border-white-500" : ""}`}
               >
                 Team
                 </a>
