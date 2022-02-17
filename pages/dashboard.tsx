@@ -1,10 +1,10 @@
-import { Button } from '@components/button'
-import ChipSelect from '@components/chips'
-import { Header } from '@components/header'
-import { InputField } from '@components/inputField'
-import Image from 'next/image'
-import React, { useState } from 'react'
-import Select from 'react-select'
+import { Button } from "@components/button";
+import ChipSelect from "@components/chips";
+import { Header } from "@components/header";
+import { InputField } from "@components/inputField";
+import Image from "next/image";
+import React, { useState } from "react";
+import Select from "react-select";
 
 export default function dashboard() {
   return (
@@ -165,82 +165,134 @@ export default function dashboard() {
           <div className="w-3/4 mx-auto">
             <h3 className="text-left text-white text-xl my-6">Skills</h3>
 
-           
-              <div className="grid grid-cols-3 lg:grid-cols-4  gap-4 text-white p-3">
-            
-            {/* chip */}
-            <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
-              Text
-              <button
-                className="hover focus:outline-none absolute "
-                style={{
-                  marginTop: '-1.2rem',
-                  marginLeft: '3rem',
-                }}
-              >
-                <Image src={'/img/Delete Button.svg'} width={25} height={25} />
-              </button>
-            </span>
+            <div className="grid grid-cols-3 lg:grid-cols-4  gap-4 text-white p-3">
+              {/* chip */}
+              <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
+                Text
+                <button
+                  className="hover focus:outline-none absolute "
+                  style={{
+                    marginTop: "-1.2rem",
+                    marginLeft: "3rem",
+                  }}
+                >
+                  <Image
+                    src={"/img/Delete Button.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </button>
+              </span>
 
-            <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
-              Text
-              <button
-                className="hover focus:outline-none absolute "
-                style={{
-                  marginTop: '-1.2rem',
-                  marginLeft: '3rem',
-                }}
-              >
-                <Image src={'/img/Delete Button.svg'} width={25} height={25} />
-              </button>
-            </span>
+              <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
+                Text
+                <button
+                  className="hover focus:outline-none absolute "
+                  style={{
+                    marginTop: "-1.2rem",
+                    marginLeft: "3rem",
+                  }}
+                >
+                  <Image
+                    src={"/img/Delete Button.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </button>
+              </span>
 
-            <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
-              Text
-              <button
-                className="hover focus:outline-none absolute "
-                style={{
-                  marginTop: '-1.2rem',
-                  marginLeft: '3rem',
-                }}
-              >
-                <Image src={'/img/Delete Button.svg'} width={25} height={25} />
-              </button>
+              <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
+                Text
+                <button
+                  className="hover focus:outline-none absolute "
+                  style={{
+                    marginTop: "-1.2rem",
+                    marginLeft: "3rem",
+                  }}
+                >
+                  <Image
+                    src={"/img/Delete Button.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </button>
               </span>
               <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
-              Text
-              <button
-                className="hover focus:outline-none absolute "
-                style={{
-                  marginTop: '-1.2rem',
-                  marginLeft: '3rem',
-                }}
-              >
-                <Image src={'/img/Delete Button.svg'} width={25} height={25} />
-              </button>
+                Text
+                <button
+                  className="hover focus:outline-none absolute "
+                  style={{
+                    marginTop: "-1.2rem",
+                    marginLeft: "3rem",
+                  }}
+                >
+                  <Image
+                    src={"/img/Delete Button.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </button>
               </span>
-               <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
-              Text
-              <button
-                className="hover focus:outline-none absolute "
-                style={{
-                  marginTop: '-1.2rem',
-                  marginLeft: '3rem',
-                }}
-              >
-                <Image src={'/img/Delete Button.svg'} width={25} height={25} />
-              </button>
+              <span className="px-8 py-2 rounded text-lg bg-blue-600 text-white  font-semibold flex align-center w-max cursor-pointer active:bg-gray-300 transition duration-300 ease ">
+                Text
+                <button
+                  className="hover focus:outline-none absolute "
+                  style={{
+                    marginTop: "-1.2rem",
+                    marginLeft: "3rem",
+                  }}
+                >
+                  <Image
+                    src={"/img/Delete Button.svg"}
+                    width={25}
+                    height={25}
+                  />
+                </button>
               </span>
-              
-              {/* chip */} 
-              </div>
+
+              {/* chip */}
+            </div>
           </div>
         </div>
       </div>
-
+      {/* section 2 */}
       <div className="mt-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 text-white p-3"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 text-white p-3">
+          <div className="w-80 mx-auto">
+            <div className="text-left my-5">
+              <h1 className="font-normal text-lg">Educational Details</h1>
+            </div>
+            <div>
+              <div className="max-w-lg py-4 px-4 bg-white shadow-lg rounded-lg my-20">
+                <div>
+                  <h2 className="text-gray-800 text-2xl font-semibold">
+                    Bachelor of engineering
+                  </h2>
+                  <h3 className="text-gray-600 text-1xl font-semibold">
+                    Design Tools
+                  </h3>
+
+                  <p className="mt-2 text-gray-600">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quae dolores deserunt ea doloremque natus error, rerum quas
+                    odio quaerat nam ex commodi hic, suscipit in a veritatis
+                    pariatur minus consequuntur!
+                  </p>
+                </div>
+                <div className="flex justify-end mt-4">
+                  <a href="#" className="text-xl font-medium text-indigo-500">
+                    John Doe
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Skills */}
+          <div className="w-3/4 mx-auto">
+            <h3 className="text-left text-white text-xl my-6">Experiences</h3>
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }

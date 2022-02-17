@@ -118,7 +118,7 @@ export default function Team(props: { team: DataType[] }) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await axios.get('http://localhost:8000/api/v1/team/')
+  const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/team/`)
 
   return {
     props: { team: res.data },
