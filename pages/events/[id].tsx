@@ -399,8 +399,8 @@ export default function event(props: { events: DataType[],Data:DataType }) {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   
-  const res = await axios.get(`${process.env.NEXT_PUBLIC_API}v1/events`);
-  const data = await axios.get(`${process.env.NEXT_PUBLIC_API}v1/events/${context?.query?.id}`);
+  const res = await axios.get(`${process.env.NEXT_PUBLIC_API}/events`);
+  const data = await axios.get(`${process.env.NEXT_PUBLIC_API}/events/${context?.query?.id}`);
   
   return {
     props: { events: res.data,Data:data.data },
