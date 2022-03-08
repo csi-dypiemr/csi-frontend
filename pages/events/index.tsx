@@ -93,32 +93,31 @@ export default function event(props: { events: DataType[] }) {
         </div>
         {upcoming.map((data, index) => {
           return (
-            
             <div key={index} className="mb-16">
               <div className="flex justify-center p-0">
-                <Image src={ `${data.image}`} width={'500'} height={'400'} />
+                <Image src={`${data.image}`} width={"500"} height={"400"} />
               </div>
 
               <div className="flex justify-center lg:p-20">
                 <Button>Register Now</Button>
-                
               </div>
-              <div  className="max-w-lg mx-auto mt-6 mb-6">
-                 <div className='text-white' dangerouslySetInnerHTML={{ __html: `${data.description}` }}></div>
+              <div className="max-w-lg mx-auto mt-6 mb-6 p-5">
+                <div
+                  className="text-white"
+                  dangerouslySetInnerHTML={{ __html: `${data.description}` }}
+                ></div>
               </div>
-              <div className="flex justify-center ">
-                
+              <div className="flex justify-center overflow-x-auto">
                 <div dangerouslySetInnerHTML={{ __html: `${data.form}` }}></div>
-                
               </div>
             </div>
-          )
+          );
         })}
 
         <div className="sm:pt-10">
           <Title>Past Events</Title>
 
-          <div className="flex flex-wrap -m-4 bg-black-100 md:pt-10 flex items-center text-gray-600 p-10 lg:p-20 sm:justify-center">
+          <div className="flex flex-wrap bg-black-100 md:pt-10 flex items-center text-gray-600 p-8 lg:p-20 sm:justify-center">
             {props.events.map((data, index) => EventCard(index, data))}
           </div>
         </div>

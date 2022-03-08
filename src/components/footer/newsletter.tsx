@@ -12,7 +12,7 @@ export const NewsLetter: React.FC = () => {
         </div>
         <div className="flex items-stretch mt-12">
           <input 
-                  className="appearance-none block w-full lg:w-80 md:w-full sm:w-full bg-grey text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-grey-100 focus:border-gray-500"
+                  className="appearance-none block w-full lg:w-80  bg-grey text-gray-700 border border-gray-200  py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-grey-100 focus:border-gray-500"
                     type={'email'}
                   placeholder='Your Email'
                 />

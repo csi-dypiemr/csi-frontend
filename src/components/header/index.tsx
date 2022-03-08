@@ -1,9 +1,9 @@
-import React from 'react'
-import Link from 'next/link'
-import { Button, Logo } from '@components'
+import React from "react";
+import Link from "next/link";
+import { Button, Logo } from "@components";
 import { useRouter } from "next/router";
 export const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState(false);
   const router = useRouter();
   return (
     <nav className="bg-transparent">
@@ -95,7 +95,7 @@ export const Header: React.FC = () => {
             </div>
           </div>
 
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center z-50">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="outline-none mobile-menu-button"
@@ -167,45 +167,50 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      <div className={isOpen ? "mobile-menu " : "hidden mobile-menu "}>
+      <div
+        className={
+          isOpen
+            ? "mobile-menu w-full absolute top-0 right-0"
+            : "hidden mobile-menu "
+        }
+        onClick={() => setIsOpen(false)}
+      >
         <ul
           className="
 z-auto text-center bg-black h-screen rounded"
         >
           <li className="active my-8">
-            <a
-              href="index.html"
-              className="block text-xl font-semibold px-2 py-4 text-white bg-white-500 "
-            >
+            <a className="block text-xl font-semibold px-2 py-4 text-white bg-white-500 ">
               Home
             </a>
           </li>
           <li className="my-8">
-            <a
-              href="#services"
-              className="block text-white text-xl font-semibold px-2 py-4 hover:bg-white transition duration-300"
-            >
-              Services
-            </a>
+            <Link href="/events">
+              <a
+                href="#services"
+                className="block text-white text-xl font-semibold px-2 py-4 hover:bg-white transition duration-300"
+              >
+                Events
+              </a>
+            </Link>
           </li>
           <li className="my-8">
-            <a
-              href="#about"
-              className="block text-white text-xl font-semibold px-2 py-4 hover:bg-white transition duration-300"
-            >
-              About
-            </a>
+            <Link href="/team">
+              <a className="block text-white text-xl font-semibold px-2 py-4 hover:bg-white transition duration-300">
+                Team
+              </a>
+            </Link>
           </li>
           <li className="my-8">
-            <a
-              href="#contact"
-              className="block text-white text-xl font-semibold px-2 py-4 hover:bg-white transition duration-300"
-            >
-              Contact Us
-            </a>
+            <Link href={"https://csidypiemr.medium.com/"}>
+              <a className="block text-white text-xl font-semibold px-2 py-4 hover:bg-white transition duration-300">
+                Blog
+              </a>
+            </Link>
           </li>
         </ul>
       </div>
+      {/* absolute top-0 right-0 px-8 py-8 */}
       {/* <script>
 				const btn = document.querySelector("button.mobile-menu-button");
 				const menu = document.querySelector(".mobile-menu");
@@ -216,4 +221,4 @@ z-auto text-center bg-black h-screen rounded"
 			</script> */}
     </nav>
   );
-}
+};
