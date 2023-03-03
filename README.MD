@@ -1,73 +1,68 @@
-# frontend
-https://csifrontend.herokuapp.com/test
-
-This project was generated with [superplate](https://github.com/pankod/superplate).
-
-## Getting Started
-
-superplate is a Next.js all-in-one project generator. Create your project with the tools you need without spending hours on setting them up.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-### Running the development server.
+In the project directory, you can run:
 
-```bash
-    yarn dev
-```
+### `npm start`
 
-### Building for production.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-```bash
-    yarn build
-```
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-### Running the production server.
+### `npm test`
 
-```bash
-    yarn start
-```
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
-To learn more about **superplate**, please check out the [Documentation](https://github.com/pankod/superplate).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### **TailwindCSS**
+### Code Splitting
 
-A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-[Go To Documentation](https://tailwindcss.com/docs)
+### Analyzing the Bundle Size
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### **Styled Components**
+### Making a Progressive Web App
 
-Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS, styled-components allows you to write actual CSS code to style your components.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-[Go To Documentation](https://styled-components.com/docs)
+### Advanced Configuration
 
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### **React Redux**
+### Deployment
 
-Redux helps you write applications that behave consistently, run in different environments (client, server, and native), and are easy to test.
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-[Go To Documentation](https://redux.js.org/introduction/getting-started)
+### `npm run build` fails to minify
 
-
-### **Docker**
-
-Docker simplifies and accelerates your workflow, while giving developers the freedom to innovate with their choice of tools, application stacks, and deployment environments for each project.
-
-[Go To Documentation](https://www.docker.com/get-started)
-
-
-### **Github Actions**
-
-GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub.
-
-[Go To Documentation](https://docs.github.com/en/actions)
-
-
-
-## License
-
-MIT
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
