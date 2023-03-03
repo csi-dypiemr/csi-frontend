@@ -1,41 +1,39 @@
 {
-  "name": "csi_frontend_22_23",
+  "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@chakra-ui/react": "^2.5.1",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
-    "framer-motion": "^6.5.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^3.11.0",
-    "react-router-dom": "^6.8.2",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+  "engines": {
+    "node": "14.x"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@atlaskit/tooltip": "^17.5.4",
+    "@formspree/react": "^2.2.4",
+    "@reduxjs/toolkit": "^1.8.0",
+    "@types/styled-components": "^5.1.21",
+    "axios": "^0.25.0",
+    "next": "12.0.7",
+    "next-compose-plugins": "^2.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-motion-ui-pack": "^0.10.3",
+    "react-redux": "^7.2.6",
+    "react-select": "^5.2.2",
+    "styled-components": "^5.2.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/node": "^14.14.13",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.16",
+    "autoprefixer": "^10.1.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2",
+    "typescript": "^4.1.3"
   }
 }

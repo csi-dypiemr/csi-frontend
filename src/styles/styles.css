@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+}
+
+.hero-image{
+    background-image: url("/img/home.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.stroke {
+  font-size: 4em;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  
+}
+
+.stroke2 {
+  -webkit-text-stroke: 5px rgb(255, 255, 255) ;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-background{
+    background-color: #011F5D;
+}
+
+
+.blueDashboard{
+  background-color: #2263E1;
+}
+
+.textblueDashboard{
+  color: #2263E1;
+}
